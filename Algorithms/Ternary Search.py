@@ -24,7 +24,7 @@ if n==1:
     else:
         print("item not found")
 else:        
-    b=bs(0,n-1,val,arr)
+    b=ts(0,n-1,val,arr)
     if b==-1:
         print("item not found")
     else:
