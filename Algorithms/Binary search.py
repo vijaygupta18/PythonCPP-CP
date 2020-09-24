@@ -13,9 +13,14 @@ def bs(l,h,val,arr):
 n=int(input())
 arr=[int(x) for x in input().split()][:n]
 val=int(input('enter value'))
-ans=bs(0,n-1,val,arr)
-if ans==-1:
-    print("element not found")
-else:
-    
-    print("Searched element is found at index",ans)
+if n==1:
+    if val==arr[0]:
+        print("Item found at index ",n-1)
+    else:
+        print("item not found")
+else:        
+    b=bs(0,n-1,val,arr)
+    if b==-1:
+        print("item not found")
+    else:
+        print("Item found at index ",b)
