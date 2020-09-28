@@ -6,3 +6,10 @@ def bs(a,n):
                 a[j]=a[j+1]
                 a[j+1]=temp
     return a
+    
+    
+    
+n=int(input())
+arr=[int(x) for x in input().split()][:n]
+b=bs(arr,n)
+print(*b)
