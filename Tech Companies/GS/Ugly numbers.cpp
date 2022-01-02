@@ -35,17 +35,25 @@ public:
 	    ull nu=1;
 	    a[0]=1;
 	    for(int i=1;i<n;i++){
+	        
+	        
+	        n2=a[u2]*2;
+	        n3=a[u3]*3;
+	        n5=a[u5]*5;
+	        
 	        nu=min(min(n2,n3),n5);
+	       
 	        a[i]=nu;
+	        
 	        if(nu==n2)
 	        u2++;
-	        n2=a[u2]*2;
+	        
 	        if(nu==n3)
 	        u3++;
-	        n3=a[u3]*3;
+	        
 	        if(nu==n5)
 	        u5++;
-	        n5=a[u5]*5;
+	        
 	    }
 	    return nu;
 	   // while(c<n){
